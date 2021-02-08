@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Traits\Tenantable;
+
+class {{ class }} extends Model
+{
+    use Tenantable;
+
+    protected $guarded = ['id'];
+}
